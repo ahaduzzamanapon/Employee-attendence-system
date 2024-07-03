@@ -53,7 +53,7 @@
     <h1>User List</h1>
     <button id="add-user-button" class="btn btn-primary" style="float: inline-end;">Add User</button>
     <button id="get-user-list-button" class="btn btn-primary">Get User List</button>
-    <a href="index.php"  class="btn btn-primary">Attendance</a>
+    <a href="index.php" class="btn btn-primary"><span>Dashboard</span></a>
     <table width="100%" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
       <thead>
         <tr>
