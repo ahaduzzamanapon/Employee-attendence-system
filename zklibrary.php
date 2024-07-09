@@ -1069,37 +1069,37 @@ class ZKLibrary {
 		}
 		*/
 	}
-	public function clearData()
-	{
-		$command = CMD_CLEAR_DATA;
-		return $this->execCommand($command);
-	}
-	public function clearUser()
-	{
-		$command = CMD_CLEAR_DATA;
-		return $this->execCommand($command);
-	}
-	public function deleteUser($uid)
-	{
-		$command = CMD_DELETE_USER;
-		$byte1 = chr((int)($uid % 256));
-		$byte2 = chr((int)($uid >> 8));
-		$command_string = $byte1.$byte2;
-		return $this->execCommand($command, $command_string);
-	}
-	public function deleteUserTemp($uid, $finger)
-	{
-		$command = CMD_DELETE_USERTEMP;
-		$byte1 = chr((int)($uid % 256));
-		$byte2 = chr((int)($uid >> 8));
-		$command_string = $byte1.$byte2.chr($finger);
-		return $this->execCommand($command, $command_string);
-	}
-	public function clearAdmin()
-	{
-		$command = CMD_CLEAR_ADMIN;
-		return $this->execCommand($command);
-	}
+	// public function clearData()
+	// {
+	// 	$command = CMD_CLEAR_DATA;
+	// 	return $this->execCommand($command);
+	// }
+	// public function clearUser()
+	// {
+	// 	$command = CMD_CLEAR_DATA;
+	// 	return $this->execCommand($command);
+	// }
+	// public function deleteUser($uid)
+	// {
+	// 	$command = CMD_DELETE_USER;
+	// 	$byte1 = chr((int)($uid % 256));
+	// 	$byte2 = chr((int)($uid >> 8));
+	// 	$command_string = $byte1.$byte2;
+	// 	return $this->execCommand($command, $command_string);
+	// }
+	// public function deleteUserTemp($uid, $finger)
+	// {
+	// 	$command = CMD_DELETE_USERTEMP;
+	// 	$byte1 = chr((int)($uid % 256));
+	// 	$byte2 = chr((int)($uid >> 8));
+	// 	$command_string = $byte1.$byte2.chr($finger);
+	// 	return $this->execCommand($command, $command_string);
+	// }
+	// public function clearAdmin()
+	// {
+	// 	$command = CMD_CLEAR_ADMIN;
+	// 	return $this->execCommand($command);
+	// }
 	public function testUserTemplate($uid, $finger)
 	{
 		$command = CMD_TEST_TEMP;
