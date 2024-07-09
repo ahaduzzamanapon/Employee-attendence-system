@@ -10,6 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
  
    // global $last_punch_id;
     $last_punch_id = [300, 300];
+    
 
     // Function to connect to a device, retrieve attendance data within a time range, and display it
     function retrieveAttendance($ip, $port, $index)
