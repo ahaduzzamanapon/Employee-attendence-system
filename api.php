@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         array("ip" => "192.168.30.20", "port" => 4370)
         // Add more devices as needed
     );
+    
 
     // Function to connect to a device, retrieve attendance data within a time range, and display it
     function retrieveAttendance($ip, $port, $startTime, $endTime)

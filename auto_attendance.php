@@ -23,6 +23,7 @@
                 <div class="input-group-append">
                     <button id="start-btn" onclick='get_data()' class="btn"><span>Start</span></button>
                     <button id="end-btn" class="btn btn-danger ml-2"><span>End</span></button>
+                    
                 </div>
             </div>
             <div class="loader" id="loader"></div>

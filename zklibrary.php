@@ -42,6 +42,8 @@ define('CMD_CLEAR_LCD', 67);
 define('CMD_GET_TIME', 201);
 define('CMD_SET_TIME', 202);
 
+
+
 define('USHRT_MAX', 65535);
 
 define('LEVEL_USER', 0);          // 0000 0000

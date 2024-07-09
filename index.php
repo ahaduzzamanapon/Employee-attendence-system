@@ -10,6 +10,7 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            
         }
         .header, .footer {
             background-color: #f8f9fa;

@@ -14,7 +14,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Function to connect to a device, retrieve attendance data within a time range, and display it
     function retrieveAttendance($ip, $port, $index)
     {
-
         $last_punch = $last_punch_id;
         echo '<pre>';
         print_r($last_punch);

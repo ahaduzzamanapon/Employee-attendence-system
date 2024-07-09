@@ -10,6 +10,7 @@ include "zklibrary.php";
 
     $user_data = array();
 
+    
     // Function to connect to a device and retrieve user data
     function getUser($ip, $port)
     {
